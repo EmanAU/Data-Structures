@@ -27,12 +27,11 @@ public:
     void insert(int uv)
     {
         int index = h1(uv);
-        int step = h2(uv);
         int start = index;
 
         while (arr[index] != -1)
         {
-            index = (index + step) % SIZE;
+            index = (index + h2(uv) % SIZE);
 
             if (index == start)
             {
@@ -60,7 +59,7 @@ public:
                 return;
             }
 
-            index = (index + step) % SIZE;
+            index = (index + h2(uv) % SIZE);
 
             if (index == start)
                 break;

@@ -1,0 +1,250 @@
+/*
+====================================================================
+        SORTING ALGORITHMS – COMPARISON & BEST USE CASES
+====================================================================
+
+Algorithms Covered:
+✔ Bubble Sort
+✔ Insertion Sort
+✔ Selection Sort
+✔ Radix Sort
+✔ Merge Sort
+✔ Quick Sort
+
+--------------------------------------------------------------------
+1️⃣ BUBBLE SORT
+--------------------------------------------------------------------
+TYPE:
+- Comparison-based
+- Simple sort
+
+TIME COMPLEXITY:
+- Best:    O(n)
+- Average: O(n²)
+- Worst:   O(n²)
+
+SPACE:
+- O(1) (in-place)
+
+STABLE:
+- YES
+
+PROS:
+- Very easy to understand
+- Works well for very small data
+
+CONS:
+- Extremely slow for large inputs
+
+BEST USED WHEN:
+✔ Very small datasets
+✔ Nearly sorted arrays
+✔ Learning basics
+
+--------------------------------------------------------------------
+2️⃣ INSERTION SORT
+--------------------------------------------------------------------
+TYPE:
+- Comparison-based
+
+TIME COMPLEXITY:
+- Best:    O(n)
+- Average: O(n²)
+- Worst:   O(n²)
+
+SPACE:
+- O(1)
+
+STABLE:
+- YES
+
+PROS:
+- Fast for nearly sorted data
+- Fewer operations than bubble sort
+
+CONS:
+- Poor performance for large datasets
+
+BEST USED WHEN:
+✔ Array is almost sorted
+✔ Small datasets
+✔ Used as helper in hybrid algorithms
+
+--------------------------------------------------------------------
+3️⃣ SELECTION SORT
+--------------------------------------------------------------------
+TYPE:
+- Comparison-based
+
+TIME COMPLEXITY:
+- Best:    O(n²)
+- Average: O(n²)
+- Worst:   O(n²)
+
+SPACE:
+- O(1)
+
+STABLE:
+- NO
+
+PROS:
+- Minimum number of swaps
+- Simple logic
+
+CONS:
+- Always slow
+- Not stable
+
+BEST USED WHEN:
+✔ Swap cost is high
+✔ Memory is limited
+✔ Educational purposes
+
+--------------------------------------------------------------------
+4️⃣ RADIX SORT
+--------------------------------------------------------------------
+TYPE:
+- NON-comparison-based
+
+TIME COMPLEXITY:
+- O(d * (n + k))
+  (Practically O(n) for fixed digits)
+
+SPACE:
+- O(n + k)
+
+STABLE:
+- YES
+
+PROS:
+- Faster than comparison sorts for integers
+- Linear time for fixed-size keys
+
+CONS:
+- Extra memory needed
+- Works only for integers / strings
+- Cannot sort floating or generic data easily
+
+BEST USED WHEN:
+✔ Large list of integers
+✔ Fixed digit length
+✔ Speed is critical
+
+--------------------------------------------------------------------
+5️⃣ MERGE SORT
+--------------------------------------------------------------------
+TYPE:
+- Comparison-based
+- Divide and Conquer
+
+TIME COMPLEXITY:
+- Best:    O(n log n)
+- Average: O(n log n)
+- Worst:   O(n log n)
+
+SPACE:
+- O(n) (extra array)
+
+STABLE:
+- YES
+
+PROS:
+- Guaranteed performance
+- Stable
+- Very reliable
+
+CONS:
+- Extra memory required
+- Not in-place
+
+BEST USED WHEN:
+✔ Stability is required
+✔ Large datasets
+✔ Linked lists
+✔ External sorting
+
+--------------------------------------------------------------------
+6️⃣ QUICK SORT
+--------------------------------------------------------------------
+TYPE:
+- Comparison-based
+- Divide and Conquer
+
+TIME COMPLEXITY:
+- Best:    O(n log n)
+- Average: O(n log n)
+- Worst:   O(n²)
+
+SPACE:
+- O(log n) average
+
+STABLE:
+- NO
+
+PROS:
+- Fastest in practice
+- In-place
+- Cache friendly
+
+CONS:
+- Worst-case O(n²)
+- Not stable
+
+BEST USED WHEN:
+✔ General-purpose sorting
+✔ Large datasets
+✔ Memory efficiency is important
+
+--------------------------------------------------------------------
+📊 COMPARISON TABLE
+--------------------------------------------------------------------
+
+| Algorithm | Best | Avg | Worst | Stable | In-place |
+|---------|------|-----|-------|--------|----------|
+| Bubble  | O(n) | O(n²) | O(n²) | Yes | Yes |
+| Insertion | O(n) | O(n²) | O(n²) | Yes | Yes |
+| Selection | O(n²) | O(n²) | O(n²) | No | Yes |
+| Radix | O(n) | O(n) | O(n) | Yes | No |
+| Merge | O(nlogn) | O(nlogn) | O(nlogn) | Yes | No |
+| Quick | O(nlogn) | O(nlogn) | O(n²) | No | Yes |
+
+--------------------------------------------------------------------
+🏆 WHICH SORT IS THE BEST?
+--------------------------------------------------------------------
+
+There is NO single best sort for all situations.
+
+✔ FASTEST IN PRACTICE → Quick Sort  
+✔ GUARANTEED PERFORMANCE → Merge Sort  
+✔ LINEAR TIME (INTEGERS) → Radix Sort  
+✔ NEARLY SORTED DATA → Insertion Sort  
+✔ SIMPLEST → Bubble Sort  
+✔ LEAST SWAPS → Selection Sort  
+
+--------------------------------------------------------------------
+🎯 WHICH SORT TO USE – QUICK DECISION GUIDE
+--------------------------------------------------------------------
+
+✔ Small data → Bubble / Insertion  
+✔ Nearly sorted → Insertion  
+✔ Large general data → Quick  
+✔ Need stability → Merge / Radix / Insertion  
+✔ Integer-only data → Radix  
+✔ Low memory → Quick / Insertion  
+✔ Worst-case guarantee → Merge  
+
+--------------------------------------------------------------------
+🧠 FINAL ONE-LINE MEMORY RULE
+--------------------------------------------------------------------
+
+Bubble    → Simple but slow  
+Insertion → Best for nearly sorted  
+Selection → Few swaps  
+Radix     → Integers, fastest  
+Merge     → Stable & safe  
+Quick     → Best overall in practice  
+
+====================================================================
+END OF SORTING COMPARISON GUIDE
+====================================================================
+*/
